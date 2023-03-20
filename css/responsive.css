@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 1199px) {
     .blockWeb {
         padding: 0px !important;
@@ -12,7 +14,10 @@
         padding : 30px 10px !important;
     }
     .blockIntroduceWrap {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .blockIntroduce .blockIntroduce__introImages {
         width: 100% !important;
@@ -23,8 +28,10 @@
     }
     .blockIntroduce__introImages--img {
         height: 100% !important;
-        object-fit: cover !important;
-        object-fit: top !important;
+        -o-object-fit: cover !important;
+           object-fit: cover !important;
+        -o-object-fit: top !important;
+           object-fit: top !important;
     }
     .blockIntroduce .blockIntroduce__introText {
         padding : 0px !important;
